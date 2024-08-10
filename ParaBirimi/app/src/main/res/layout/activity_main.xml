@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/dolarDegerTextView"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="90dp"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ED0707"
+        android:textColorLink="#020202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/dolarDegerTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/usd">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/dolarTextView"
+            android:layout_width="102dp"
+            android:layout_height="52dp"
+            android:gravity="bottom"
+            android:text="   Dolar"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/usd_try_TextView"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="240dp"
+        android:text="USD/TRY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dolarDegerTextView" />
+
+    <TextView
+        android:id="@+id/euroDegerTextView"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="35dp"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ED0707"
+        android:textColorLink="#020202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/usd_try_TextView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/euroDegerTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usd_try_TextView">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/euro">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/euroTextView"
+            android:layout_width="102dp"
+            android:layout_height="52dp"
+            android:gravity="bottom"
+            android:text="   Euro"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/eur_try_TextView"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="240dp"
+        android:text="EUR/TRY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/euroDegerTextView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/sterlinDegerTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eur_try_TextView">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/gbp">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/sterlinTextView"
+            android:layout_width="102dp"
+            android:layout_height="52dp"
+            android:gravity="bottom"
+            android:text="   Sterlin"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sterlinDegerTextView"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="25dp"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ED0707"
+        android:textColorLink="#020202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/eur_try_TextView" />
+
+
+    <TextView
+        android:id="@+id/gbp_try_TextView"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="240dp"
+        android:text="GBP/TRY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sterlinDegerTextView" />
+
+    <TextView
+        android:id="@+id/japonDegerTextView"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="9dp"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ED0707"
+        android:textColorLink="#020202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/gbp_try_TextView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/japonDegerTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gbp_try_TextView">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/japanese">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/japonTextView"
+            android:layout_width="102dp"
+            android:layout_height="52dp"
+            android:gravity="bottom"
+            android:text="   Japon"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/jpy_try_TextView"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="240dp"
+        android:text="JPY/TRY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japonDegerTextView" />
+
+    <TextView
+        android:id="@+id/avusturalyaDegerTextView"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="14dp"
+        android:gravity="bottom"
+        android:text="0"
+        android:textColor="#ED0707"
+        android:textColorLink="#020202"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/jpy_try_TextView" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/avusturalyaDegerTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jpy_try_TextView">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/aud">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/avusTextView"
+            android:layout_width="102dp"
+            android:layout_height="52dp"
+            android:gravity="bottom"
+            android:text="   Avustralya"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/aud_try_TextView"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="240dp"
+        android:text="AUD/TRY"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avusturalyaDegerTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
